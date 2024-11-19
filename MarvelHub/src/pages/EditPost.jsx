@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 import "./EditPost.css";
 import { supabase } from "../lib/supabase";
-import { usePosts } from "../pages/PostContext";
+import { usePosts } from "./PostContext";
 
 const EditPost = () => {
   const { id } = useParams();

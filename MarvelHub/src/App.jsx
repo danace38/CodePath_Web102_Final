@@ -1,4 +1,5 @@
 import "./App.css";
+import logo from './assets/logo_marvel.png';
 import React, { useState } from "react";
 import { useRoutes, Link } from "react-router-dom";
 import ReadPosts from "./pages/ReadPosts";
@@ -43,7 +44,11 @@ function App() {
   return (
     <div className="App">
       <div className="header">
-        <h2>Hobby Hub</h2>
+      <img
+          src={logo}
+          alt="Marvel Logo"
+          className="logo"
+        />
         <input
           type="text"
           placeholder="Search"
