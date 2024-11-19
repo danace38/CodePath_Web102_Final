@@ -1,8 +1,8 @@
-# Web Development Final Project - *HobbyHub*
+# Web Development Final Project - *MarvelHub*
 
 Submitted by: **Danil Ermolin**
 
-This web app: **A web-based community platform enabling users to create posts, view a curated feed of posts, edit and delete their own posts, comment on posts to engage in discussions, and upvote posts to show appreciation.**
+This web app: **A web-based Marvel Universe community platform enabling users to create posts, view a curated feed of posts, edit and delete their own posts, comment on posts to engage in discussions, and upvote posts to show appreciation.**
 
 Time spent: **20** hours spent in total
 
@@ -50,9 +50,6 @@ GIF created with ...
 [ScreenToGif](https://www.screentogif.com/) for Windows
 [peek](https://github.com/phw/peek) for Linux. -->
 
-## Notes
-
-Describe any challenges encountered while building the app.
 
 ## License
 
