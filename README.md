@@ -1,6 +1,6 @@
-# Web Development Final Project - *Name of App Here*
+# Web Development Final Project - *HobbyHub*
 
-Submitted by: **Your Name Here**
+Submitted by: **Danil Ermolin**
 
 This web app: **insert description**
 

@@ -1,35 +1,66 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import "./App.css";
+import React, { useState } from "react";
+import { useRoutes, Link } from "react-router-dom";
+import ReadPosts from "./pages/ReadPosts";
+import CreatePost from "./pages/CreatePost";
+import EditPost from "./pages/EditPost";
+import DetailPost from "./pages/DetailPost";
+import { usePosts } from './pages/PostContext';
 
 function App() {
-  const [count, setCount] = useState(0)
+  const { posts } = usePosts();
+  const [searchTitle, setSearchTitle] = useState("");
+
+  const handleSearch = (event) => {
+    const query = event.target.value;
+    setSearchTitle(query);
+  };
+
+  const filteredPosts = posts.filter((post) => {
+    return post.title.toLowerCase().includes(searchTitle.toLowerCase());
+  });
+
+  // Sets up routes
+  let element = useRoutes([
+    {
+      path: "/",
+      element: <ReadPosts posts={filteredPosts} searchTitle={searchTitle} />,
+    },
+    {
+      path: "/detail/:id",
+      element: <DetailPost />,
+    },
+    {
+      path: "/edit/:id",
+      element: <EditPost />,
+    },
+    {
+      path: "/new",
+      element: <CreatePost />,
+    },
+  ]);
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className="App">
+      <div className="header">
+        <h2>Hobby Hub</h2>
+        <input
+          type="text"
+          placeholder="Search"
+          className="searchBar"
+          onChange={handleSearch}
+          value={searchTitle}
+        />
+        <Link to="/">
+          <button className="headerBtn">Home</button>
+        </Link>
+        <Link to="/new">
+          <button className="headerBtn">Create New Post</button>
+        </Link>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+      {element}
+    </div>
+  );
 }
 
-export default App
+export default App;

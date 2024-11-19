@@ -1,0 +1,17 @@
+.card {
+    background-color: rgb(221, 221, 221);
+    backdrop-filter: blur(2px);
+    border: 1px solid rgba(43, 44, 44, 0.497);
+    border-radius: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    width: 85%;
+    text-align: left;
+    border-width: thick;
+}
+
+.title {
+    color:black;
+    font-size: 24px;
+}
