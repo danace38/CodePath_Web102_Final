@@ -2,7 +2,7 @@
 
 Submitted by: **Danil Ermolin**
 
-This web app: **insert description**
+This web app: **This web app is a forum where it allows users to create posts, see a feed on home page, edit, delete, or leave comments underneath them for discussions, and give upvotes for posts that they like**
 
 Time spent: **X** hours spent in total
 
