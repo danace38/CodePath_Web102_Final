@@ -40,8 +40,7 @@ The following **additional** features are implemented:
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
-
-
+![Web102_Final](https://github.com/user-attachments/assets/eb790e58-4d58-427f-b6f7-a4fe8b61e06e)
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with ScreenToGif
