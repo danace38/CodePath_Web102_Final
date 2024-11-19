@@ -47,7 +47,7 @@ const CreatePost = () => {
   return (
     <div className="main">
       <div className="create-form">
-        <h1>Create a Hobby!</h1>
+        <h1>Create your Post!</h1>
         <form onSubmit={handleCreate}>
           <input
             className="input"
