@@ -57,7 +57,7 @@ const EditPost = () => {
   return (
     <div className="main">
       <div className="edit-form">
-        <h1>Edit your Hobby!</h1>
+        <h1>Edit your Post!</h1>
         <form onSubmit={handleUpdate}>
           <input
             className="input"
